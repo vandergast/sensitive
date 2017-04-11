@@ -1,0 +1,40 @@
+{
+  "name": "sensitive",
+  "version": "1.0.0",
+  "description": "Filter out a list of sensitive words",
+  "main": "build/index.js",
+  "scripts": {
+    "dev": "watch 'npm run build' src",
+    "build": "babel src -d build",
+    "test": "jest",
+    "test:watch": "npm test -- --watch",
+    "prepublish": "npm run build"
+  },
+  "babel": {
+    "presets": [
+      "latest"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vandergast/sensitive.git"
+  },
+  "keywords": [
+    "filter",
+    "filtering",
+    "sensitive",
+    "words"
+  ],
+  "author": "Daniel Castrillo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vandergast/sensitive/issues"
+  },
+  "homepage": "https://github.com/vandergast/sensitive#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-latest": "^6.24.1",
+    "jest": "^19.0.2",
+    "watch": "^1.0.2"
+  }
+}
